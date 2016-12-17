@@ -10,7 +10,7 @@ class TestGetIssue(unittest.TestCase):
         self.creds = ('root', 'c00desp1ce')
 
     def test_get_issue(self):
-        url = self.base_url + '/issue/' + 'API-1'
+        url = self.base_url + '/issue/' + 'API-x'
         response = requests.get(url, auth=self.creds)
         r_dict = xmltodict.parse(response.text)
 
